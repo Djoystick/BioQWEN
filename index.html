@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сергей — Копирайтер</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" fill="#f9f5f0" stroke="#c76b51" stroke-width="6"/>
+          <text x="50" y="60" text-anchor="middle" font-size="40" fill="#c76b51" font-family="Arial, sans-serif">S·C</text>
+        </svg>
+        Сергей
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="works.html">Работы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Продающие тексты, которые работают</h1>
+      <p>Я — Сергей, копирайтер с 5+ годами опыта. Пишу тексты, которые не просто красивы, а приносят клиентов и увеличивают продажи.</p>
+      <a href="contact.html" class="btn">Написать мне</a>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают меня?</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+          <div>
+            <h3>🎯 Цель</h3>
+            <p>Каждый текст — инструмент для достижения бизнес-целей: продажи, лиды, узнаваемость.</p>
+          </div>
+          <div>
+            <h3>🧠 Исследования</h3>
+            <p>Глубокий анализ ЦА, конкурентов и ниши перед написанием любого текста.</p>
+          </div>
+          <div>
+            <h3>⚡ Скорость</h3>
+            <p>Соблюдаю дедлайны без потери качества. Готов к срочным задачам.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Сергей. Сайт разработан Djoystick.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

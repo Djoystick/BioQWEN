@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Обо мне — Сергей Копирайтер</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" fill="#f9f5f0" stroke="#c76b51" stroke-width="6"/>
+          <text x="50" y="60" text-anchor="middle" font-size="40" fill="#c76b51" font-family="Arial, sans-serif">S·C</text>
+        </svg>
+        Сергей
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="works.html">Работы</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="section-title">Обо мне</h2>
+      <div style="max-width: 800px; margin: 0 auto; text-align: justify;">
+        <p>Привет! Меня зовут Сергей, и я — профессиональный копирайтер, специализирующийся на продающих текстах для бизнеса.</p>
+        <p>Начал писать ещё в университете, а спустя несколько лет понял: слова — мой главный инструмент влияния. За 5+ лет я создал более 500 текстов для сайтов, лендингов, email-рассылок, рекламы и соцсетей.</p>
+        <p>Работал с клиентами из e-commerce, SaaS, образования, красоты и wellness. Мои тексты помогли увеличить конверсию на 30–200% в разных проектах.</p>
+        <p>Я не просто «пишу красиво» — я решаю бизнес-задачи через слова. Каждый текст начинается с вопроса: «Что должен сделать читатель после него?»</p>
+        <p>Когда не за клавиатурой — читаю книги по психологии, маркетингу и иногда уезжаю в горы, чтобы перезагрузиться.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Сергей. Сайт разработан Djoystick.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
