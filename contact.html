@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Контакты — Сергей Копирайтер</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 1.2rem 0;
+      font-size: 1.05rem;
+    }
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      color: var(--terracotta);
+    }
+    .contact-link {
+      color: var(--terracotta);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -39,13 +63,32 @@
         <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
           Готов обсудить ваш проект и помочь словами увеличить продажи!
         </p>
-        <div style="margin: 1.5rem 0;">
-          <p><strong>📧 Email:</strong><br><a href="mailto:j.j.nicals@gmail.com" style="color: var(--terracotta); text-decoration: none;">j.j.nicals@gmail.com</a></p>
+
+        <!-- Email -->
+        <div class="contact-item">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 4.5h18v15H3v-15zm18 3.75l-9 6-9-6v-2.25l9 6 9-6v2.25z"/>
+          </svg>
+          <a href="mailto:viciou5sid@yandex.ru" class="contact-link">viciou5sid@yandex.ru</a>
         </div>
-        <div style="margin: 1.5rem 0;">
-          <p><strong>💬 Telegram:</strong><br><a href="https://t.me/Tvoy_Kosmonavt" target="_blank" style="color: var(--terracotta); text-decoration: none;">@Tvoy_Kosmonavt</a></p>
+
+        <!-- Telegram -->
+        <div class="contact-item">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.373 8.755l-2.34 11.058c-.148.698-.578 1.048-1.21.633L11.5 14.5l-2.195 2.195c-.393.393-.882.196-.882-.393V8.755c0-.393.196-.882.589-.882h6.176c.393 0 .882.196.882.589v2.353c0 .393.393.589.589.196l1.176-1.176c.196-.196.196-.589 0-.785z"/>
+          </svg>
+          <a href="https://t.me/Tvoy_Kosmonavt" target="_blank" class="contact-link">@Tvoy_Kosmonavt</a>
         </div>
-        <p style="font-size: 0.95rem; color: #6b635a; margin-top: 1.5rem;">
+
+        <!-- Blog -->
+        <div class="contact-item">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 4h16v2H4V4zm0 5h16v2H4V9zm0 5h16v2H4v-2zM4 19h10v2H4v-2z"/>
+          </svg>
+          <a href="https://www.sostav.ru/blogs/285042" target="_blank" class="contact-link">Читать мой блог</a>
+        </div>
+
+        <p style="font-size: 0.95rem; color: #6b635a; margin-top: 1.8rem;">
           Отвечаю в течение 24 часов. Для срочных задач — укажите это в сообщении.
         </p>
       </div>
