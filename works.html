@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Мои работы — Сергей Копирайтер</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Дополнительные стили для кликабельных карточек */
+    .work-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+    .work-card-link:hover {
+      transform: translateY(-4px);
+    }
+    .work-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .work-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -36,39 +59,47 @@
     <div class="container">
       <h2 class="section-title">Мои работы</h2>
       <div class="works-grid">
-        <div class="work-card">
-          <img src="https://via.placeholder.com/300x180/e0d9d0/4a3f35?text=Лендинг" alt="Лендинг для онлайн-курса">
-          <div class="work-content">
-            <h3>Лендинг для онлайн-курса</h3>
-            <p>Конверсия выросла на 85%. Текст сфокусирован на боли и решении.</p>
+        <a href="#work1" class="work-card-link">
+          <div class="work-card">
+            <img src="https://via.placeholder.com/300x180/e0d9d0/4a3f35?text=Лендинг" alt="Лендинг для онлайн-курса">
+            <div class="work-content">
+              <h3>Лендинг для онлайн-курса</h3>
+              <p>Конверсия выросла на 85%. Текст сфокусирован на боли и решении.</p>
+            </div>
           </div>
-        </div>
-        <div class="work-card">
-          <img src="https://via.placeholder.com/300x180/f9f5f0/c76b51?text=Email" alt="Email-рассылка">
-          <div class="work-content">
-            <h3>Email-рассылка для бренда одежды</h3>
-            <p>CTR — 12%, продажи выросли на 40% за неделю.</p>
+        </a>
+        <a href="#work2" class="work-card-link">
+          <div class="work-card">
+            <img src="https://via.placeholder.com/300x180/f9f5f0/c76b51?text=Email" alt="Email-рассылка">
+            <div class="work-content">
+              <h3>Email-рассылка для бренда одежды</h3>
+              <p>CTR — 12%, продажи выросли на 40% за неделю.</p>
+            </div>
           </div>
-        </div>
-        <div class="work-card">
-          <img src="https://via.placeholder.com/300x180/fdf9f5/4a3f35?text=Сайт" alt="Сайт студии йоги">
-          <div class="work-content">
-            <h3>Сайт студии йоги</h3>
-            <p>Тёплый, вовлекающий текст, усиливающий доверие и атмосферу.</p>
+        </a>
+        <a href="#work3" class="work-card-link">
+          <div class="work-card">
+            <img src="https://via.placeholder.com/300x180/fdf9f5/4a3f35?text=Сайт" alt="Сайт студии йоги">
+            <div class="work-content">
+              <h3>Сайт студии йоги</h3>
+              <p>Тёплый, вовлекающий текст, усиливающий доверие и атмосферу.</p>
+            </div>
           </div>
-        </div>
-        <div class="work-card">
-          <img src="https://via.placeholder.com/300x180/e0d9d0/c76b51?text=Реклама" alt="Тексты для рекламы">
-          <div class="work-content">
-            <h3>Тексты для рекламы в Instagram</h3>
-            <p>ROAS увеличился в 2.3 раза за месяц.</p>
+        </a>
+        <a href="#work4" class="work-card-link">
+          <div class="work-card">
+            <img src="https://via.placeholder.com/300x180/e0d9d0/c76b51?text=Реклама" alt="Тексты для рекламы">
+            <div class="work-content">
+              <h3>Тексты для рекламы в Instagram</h3>
+              <p>ROAS увеличился в 2.3 раза за месяц.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div style="text-align: center; margin-top: 2.5rem;">
-  <p>Хотите увидеть больше примеров или обсудить ваш проект?</p>
-  <a href="https://t.me/Tvoy_Kosmonavt" target="_blank" class="btn">Написать мне</a>
-</div>
+        <p>Хотите увидеть больше примеров или обсудить ваш проект?</p>
+        <a href="contact.html" class="btn">Написать мне</a>
+      </div>
     </div>
   </main>
 
@@ -86,5 +117,4 @@
     });
   </script>
 </body>
-
 </html>
